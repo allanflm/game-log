@@ -56,7 +56,7 @@ Prints do app Letterboxd ficam em `referencias/`. Usamos como guia de **navegaç
 **Tarefas:**
 - [x] Estrutura de pastas por camada (`data`, `domain`, `ui`)
 - [x] Entity, DAO e Database do Room
-- [ ] Repository expondo `Flow<List<Game>>`
+- [x] Repository expondo `Flow<List<Game>>`
 - [ ] Tela de lista com cards
 - [ ] Tela de adicionar/editar jogo (formulário)
 - [ ] Tela de detalhe com nota, status e review
