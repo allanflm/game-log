@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Contexto e regras para trabalhar neste projeto. Leia também o `PLANO.md`, que tem as etapas e o que já foi feito.
+Contexto e regras para trabalhar neste projeto. Leia também o `PLANO.md`, que tem as etapas e o que já foi feito. A pasta `referencias/` tem prints do Letterboxd que guiam navegação e layout das telas (o visual é próprio, sem copiar a marca).
 
 ## Sobre o projeto
 
@@ -28,7 +28,8 @@ Contexto e regras para trabalhar neste projeto. Leia também o `PLANO.md`, que t
 - ViewModel + StateFlow (MVVM)
 - Room com KSP
 - Hilt (a partir da etapa 2)
-- Retrofit + Coil (etapa 3)
+- Retrofit (etapa 3, conta e login) + Coil (etapa 4)
+- Backend Spring Boot + Postgres, auth com JWT (etapa 3)
 - Build em Kotlin DSL, dependências no version catalog `gradle/libs.versions.toml`
 - Pacote base: `com.allan.gamelog`, minSdk 26
 
