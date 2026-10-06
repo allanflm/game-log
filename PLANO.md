@@ -25,9 +25,9 @@ Configuração inicial: pacote `com.allan.gamelog`, Minimum SDK API 26, build em
 
 - [x] Instalar Android Studio
 - [x] Criar emulador (Pixel 7)
-- [ ] Criar projeto "GameLog" com o template Empty Activity
-- [ ] Rodar o "Hello Android!" no emulador
-- [ ] Criar o repositório Git e fazer o primeiro commit
+- [x] Criar projeto "GameLog" com o template Empty Activity
+- [x] Rodar o "Hello Android!" no emulador
+- [x] Criar o repositório Git e fazer o primeiro commit
 
 ## Etapa 1: app offline (MVP)
 
