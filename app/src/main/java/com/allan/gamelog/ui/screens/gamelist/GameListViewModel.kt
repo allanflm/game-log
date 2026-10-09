@@ -7,12 +7,27 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.allan.gamelog.GameLogApplication
 import com.allan.gamelog.data.repository.GameRepository
+import com.allan.gamelog.domain.Game
+import com.allan.gamelog.domain.GameStatus
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 
 class GameListViewModel(gameRepository: GameRepository) : ViewModel() {
+
+    // TEMPORÁRIO: jogos de teste até existir a tela de adicionar. Remover depois.
+    init {
+        viewModelScope.launch {
+            if (gameRepository.observeGames().first().isEmpty()) {
+                gameRepository.saveGame(Game(title = "Hollow Knight", platform = "PC", status = GameStatus.COMPLETED, rating = 5f))
+                gameRepository.saveGame(Game(title = "Elden Ring", platform = "PS5", status = GameStatus.PLAYING, rating = 4.5f))
+                gameRepository.saveGame(Game(title = "Celeste", platform = "Switch", status = GameStatus.BACKLOG))
+            }
+        }
+    }
 
     // Transforma o Flow do banco em StateFlow. Cada vez que a tabela muda, o Room
     // emite uma lista nova e o uiState atualiza sozinho.
