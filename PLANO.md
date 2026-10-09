@@ -71,7 +71,7 @@ Prints do app Letterboxd ficam em `referencias/`. Usamos como guia de **navegaç
 
 **Entrega:** a parte "Letterboxd" de verdade, ainda sem conta.
 
-- [ ] Barra de navegação inferior (início, busca, adicionar, atividade, perfil)
+- [x] Barra de navegação inferior (início, busca, adicionar, atividade, perfil)
 - [ ] Diário: timeline agrupada por mês do que joguei
 - [ ] Filtros por status e por plataforma
 - [ ] Ordenação (data, nota, título)
@@ -80,7 +80,7 @@ Prints do app Letterboxd ficam em `referencias/`. Usamos como guia de **navegaç
 - [ ] Estatísticas simples: jogos zerados no ano, nota média, plataforma mais jogada
 - [ ] Migração para Hilt (injeção de dependência)
 - [ ] Testes unitários dos ViewModels e instrumentados do DAO
-- [ ] Tema claro/escuro
+- [x] Tema claro/escuro (segue o sistema, paleta própria, sem cor dinâmica)
 
 ## Etapa 3: conta e login (backend)
 
@@ -120,11 +120,11 @@ Senha nunca fica no app: quem guarda (com hash) e valida é o backend. O app só
 
 O IGDB exige credenciais de desenvolvedor da Twitch. Elas **não podem ficar dentro do app**, então o mesmo backend da etapa 3 guarda as credenciais e repassa as buscas.
 
-- [ ] Backend: endpoint `GET /games/search?q=`
-- [ ] Backend: autenticação na Twitch (client credentials) com cache do token
-- [ ] App: tela de busca e "adicionar a partir do resultado"
-- [ ] App: capas com Coil e cache em disco
-- [ ] App: grade "Popular this week" na home
+- [x] Backend: endpoint `GET /games/search?q=` (e `GET /games/popular`)
+- [x] Backend: autenticação na Twitch (client credentials) com cache do token
+- [ ] App: tela de busca e "adicionar a partir do resultado" (a busca está pronta; falta adicionar a partir do resultado)
+- [x] App: capas com Coil e cache em disco
+- [x] App: grade "Popular this week" na home
 - [ ] App: campos novos no Room (`coverUrl`, `releaseYear`, `genres`, `igdbId`) com migração
 
 ## Etapa 5: social
