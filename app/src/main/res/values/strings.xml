@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">gamelog</string>
+
+    <string name="game_list_empty">Nenhum jogo ainda</string>
+    <string name="game_rating">★ %1$.1f</string>
+    <string name="game_platform_status">%1$s · %2$s</string>
+    <string name="game_not_rated">Sem nota</string>
+
+    <string name="status_backlog">Backlog</string>
+    <string name="status_playing">Jogando</string>
+    <string name="status_completed">Zerado</string>
+    <string name="status_dropped">Abandonado</string>
 </resources>
