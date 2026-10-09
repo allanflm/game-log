@@ -19,6 +19,7 @@ import androidx.navigation.compose.rememberNavController
 import com.allan.gamelog.ui.screens.comingsoon.ComingSoonScreen
 import com.allan.gamelog.ui.screens.gamelist.GameListScreen
 import com.allan.gamelog.ui.screens.home.HomeScreen
+import com.allan.gamelog.ui.screens.search.SearchScreen
 
 // Raiz do app: a barra inferior fixa e, acima dela, a tela da aba selecionada.
 @Composable
@@ -63,7 +64,7 @@ fun GameLogApp() {
             modifier = Modifier.padding(innerPadding),
         ) {
             composable<HomeRoute> { HomeScreen() }
-            composable<SearchRoute> { ComingSoonScreen() }
+            composable<SearchRoute> { SearchScreen() }
             composable<AddRoute> { ComingSoonScreen() }
             composable<ActivityRoute> { ComingSoonScreen() }
             // Por enquanto o perfil mostra a lista de jogos do usuário.

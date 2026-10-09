@@ -12,6 +12,11 @@
     <string name="load_error">Não foi possível carregar os jogos.</string>
     <string name="retry">Tentar de novo</string>
 
+    <string name="search_hint">Buscar jogos</string>
+    <string name="search_prompt">Digite o nome de um jogo</string>
+    <string name="search_no_results">Nenhum jogo encontrado</string>
+    <string name="meta_separator">" · "</string>
+
     <string name="game_list_empty">Nenhum jogo ainda</string>
     <string name="game_rating">★ %1$.1f</string>
     <string name="game_platform_status">%1$s · %2$s</string>
