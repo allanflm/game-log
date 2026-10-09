@@ -8,6 +8,10 @@
     <string name="nav_profile">Perfil</string>
     <string name="coming_soon">Em breve</string>
 
+    <string name="home_popular_title">Populares da semana</string>
+    <string name="load_error">Não foi possível carregar os jogos.</string>
+    <string name="retry">Tentar de novo</string>
+
     <string name="game_list_empty">Nenhum jogo ainda</string>
     <string name="game_rating">★ %1$.1f</string>
     <string name="game_platform_status">%1$s · %2$s</string>

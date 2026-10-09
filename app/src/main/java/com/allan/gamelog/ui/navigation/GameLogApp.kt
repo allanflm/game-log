@@ -18,6 +18,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.allan.gamelog.ui.screens.comingsoon.ComingSoonScreen
 import com.allan.gamelog.ui.screens.gamelist.GameListScreen
+import com.allan.gamelog.ui.screens.home.HomeScreen
 
 // Raiz do app: a barra inferior fixa e, acima dela, a tela da aba selecionada.
 @Composable
@@ -61,7 +62,7 @@ fun GameLogApp() {
             startDestination = HomeRoute,
             modifier = Modifier.padding(innerPadding),
         ) {
-            composable<HomeRoute> { ComingSoonScreen() }
+            composable<HomeRoute> { HomeScreen() }
             composable<SearchRoute> { ComingSoonScreen() }
             composable<AddRoute> { ComingSoonScreen() }
             composable<ActivityRoute> { ComingSoonScreen() }
