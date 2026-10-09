@@ -2,6 +2,8 @@ package com.allan.gamelog
 
 import android.app.Application
 import com.allan.gamelog.data.local.GameLogDatabase
+import com.allan.gamelog.data.remote.GameApi
+import com.allan.gamelog.data.repository.CatalogRepository
 import com.allan.gamelog.data.repository.GameRepository
 
 // O Android cria esta classe uma vez só, quando o processo do app começa. Por isso
@@ -13,4 +15,6 @@ class GameLogApplication : Application() {
     private val database by lazy { GameLogDatabase.create(this) }
 
     val gameRepository by lazy { GameRepository(database.gameDao()) }
+
+    val catalogRepository by lazy { CatalogRepository(GameApi.create()) }
 }
