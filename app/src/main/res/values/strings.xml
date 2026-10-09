@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">gamelog</string>
 
+    <string name="nav_home">Início</string>
+    <string name="nav_search">Buscar</string>
+    <string name="nav_add">Adicionar</string>
+    <string name="nav_activity">Atividade</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="coming_soon">Em breve</string>
+
     <string name="game_list_empty">Nenhum jogo ainda</string>
     <string name="game_rating">★ %1$.1f</string>
     <string name="game_platform_status">%1$s · %2$s</string>
